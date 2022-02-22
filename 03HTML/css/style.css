@@ -1,15 +1,16 @@
 *{
     padding: 0;
     margin: 0;
-    color: (ccd5ae);
+    color: #ccd5ae;
     text-align: center;
+
 }
 
-html,   body{
-    background-color: #1d3557;
+html,   body{   
+    background-color: #22223b;  
 }
 
-.main-container{
+.presentacion{ 
     border: 4px solid hsl(219, 79%, 66%);
     border-radius: 25px;
     margin: 2rem;
@@ -34,3 +35,5 @@ article, aside{
 nav,section, footer{
     background-color: mediumslateblue;
 }
+
+
