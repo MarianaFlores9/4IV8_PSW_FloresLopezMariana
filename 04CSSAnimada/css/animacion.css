@@ -1,9 +1,9 @@
 @keyframes animacion_test{
     from{
-        background-color: aquamarine;
+        background-color: rgb(127, 255, 255);
     }
     to{
-        background-color: darkmagenta;
+        background-color: rgb(231, 139, 231);
     }
 }
 
@@ -36,7 +36,7 @@
 .label{
     width: 64px;
     text-align: center;
-    background-color: rgb(32, 79, 207);
+    background-color: rgb(45, 88, 204);
     color: #ffffff;
     font-size: 1.3rem;
     padding: 1rem;
@@ -51,8 +51,8 @@
 .loader{
     width: 64px;
     height: 64px;
-    border: 16px solid #c51ab7ab;
-    border-top: 16px solid #087777;
+    border: 16px solid #347bd8ab;
+    border-top: 16px solid #4e0877;
     border-radius: 50%;
     animation: girar 2s linear infinite;
 }
@@ -60,9 +60,9 @@
 .loader-double{
     width: 64px;
     height: 64px;
-    border: 16px solid #19c20a63;
-    border-top: 16px solid #087777;
-    border-bottom: 16px solid #4709f18c;
+    border: 16px solid #e462d263;
+    border-top: 16px solid #477cdd;
+    border-bottom: 16px solid #6f4bd18c;
     border-radius: 50%;
     animation: girar 2s linear infinite;
 }
@@ -70,7 +70,7 @@
 .animada{
     width: 100%;
     background-color: aquamarine;
-    color: bisque;
+    color: rgb(147, 238, 119);
     text-align: center;
     height: 200px;
     display: flex;
