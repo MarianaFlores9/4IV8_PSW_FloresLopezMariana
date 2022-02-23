@@ -25,7 +25,7 @@ body{
    font-family: "Roboto";
     text-transform: uppercase;
     padding-top: 30px;
-    color: aqua;
+    color: rgb(0, 140, 255);
 }
 .userid{
     padding-top:20px ;
@@ -42,7 +42,7 @@ body{
 .userid input{
     height: 15px;
     width: 200px;
-    border: 2px solid rgb(0, 51, 128);
+    border: 2px solid rgb(8, 70, 163);
     border-radius: 10px;
     
 }
@@ -61,7 +61,7 @@ body{
 .pasword input{
     height: 15px;
     width: 300px;
-    border: 2px solid rgb(0, 102, 128);
+    border: 2px solid rgb(44, 199, 238);
     border-radius: 10px;
     
 }
