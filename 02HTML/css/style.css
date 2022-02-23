@@ -6,7 +6,7 @@
 }
 
 html,   body{
-    background-color: #1d3557;
+    background-color: #7cacf0;
 }
 
 
@@ -29,7 +29,7 @@ article, aside{
     width: 40%;
     display: inline-block;
     height: 300px;
-    background-color: deeppink;
+    background-color: rgb(236, 129, 186);
 }
 
 nav,section, footer{
