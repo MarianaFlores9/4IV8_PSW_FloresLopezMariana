@@ -1,0 +1,161 @@
+*{  
+    padding: 0;
+    margin: 0;
+    color:rgb(252, 252, 252);
+
+}
+@keyframes animacion_bady{
+    0% {background-image:url(../imagenes/fondo6.jpg) ;}
+    50% {background-image:url(../imagenes/fondo3.jpg) ;}
+    100% { background-image:url(../imagenes/fondo2.jpg) ;}
+}
+body{   
+    animation: animacion_bady 5s alternate infinite;
+    background-size: cover;
+    color: rgb (0,0,0);
+    line-height: 22px; 
+  
+}
+.Encabezado{
+    background-image: url(../imagenes/enca4.png);
+    background-size: cover;
+
+}  
+header{
+   
+    display: table;
+    width: 100%;
+    height: auto;
+
+}
+
+nav{
+    float:left;
+    margin-right: 50px;
+    
+}
+nav ul li{
+    font-family: cursive ;
+    font-size: 25px;
+    list-style: none;
+    position: static;
+    margin-left: 90px;    
+    padding: 30px 5px;
+    float: left;
+    
+}
+nav ul li a{
+    text-decoration:solid;
+}
+.Contenido{  
+    width: auto;
+    height: auto;    
+    margin: 15px 50px;
+    display:flex;
+    
+}
+.Contenido .Contenido_left{  
+    width:800px;  
+}   
+
+.Contenido .Contenido_left .Historia{  
+    width: 100%;
+    margin: 15px ;
+    margin-left: 10rem;
+    font-size: 18px;
+    padding:28px 25px;
+    text-align: justify;
+    font-family:sans-serif ;
+    background-color: rgba(22, 84, 219, 0.747);
+
+    
+}
+.Contenido .Contenido_right{  
+    width: 320px;
+  
+}  
+.Contenido .Contenido_right .imagenes{  
+    margin-left: 20rem;
+    margin-top: 15px;
+  
+}    
+.Contenido .Contenido_right .imagenes .label{ 
+    width: 320px;
+    height: auto;
+    font-family:sans-serif ;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: rgba(0, 167, 245, 0.596);
+}
+section{  
+    width: auto;   
+}
+@keyframes animacion_test{
+    0% {background-color: rgba(0, 0, 0, 0.473);}
+    50% { background-color: rgba(3, 26, 70, 0.418);}
+    100% { background-color: rgba(66, 0, 247, 0.418);}
+}
+.Bene{  
+    width: 80rem;
+    margin: 15px ;
+    margin-left: 11rem;
+    font-size: 18px;
+    padding:4rem 2rem;
+    text-align: justify;
+    font-family:sans-serif ;
+    border: 5px solid rgba(60, 187, 238, 0.623);
+    background-color: rgba(22, 84, 219, 0.747);
+    animation: animacion_test 2s alternate infinite;  
+}
+section{  
+    width: auto;  
+    
+}
+.Estudios{  
+    width: 50rem;
+    margin: 15px ;
+    font-size: 18px;
+    margin-left: 25rem;
+    margin-top: 15px; 
+    padding:4rem 2rem;
+    text-align: justify;
+    font-family:sans-serif ;
+    border: 5px solid rgba(60, 187, 238, 0.623);
+    background-color: rgba(22, 84, 219, 0.747);
+    animation: animacion_test 2s alternate infinite;  
+}
+.level1{  
+    width: 800 px;
+    margin: 15px ;
+    margin-left: 10rem;
+    font-size: 18px;
+    padding:28px 25px;
+    text-align: justify;
+}
+.level2{  
+    width: 800 px;
+    margin: 15px ;
+    margin-left: 10rem;
+    font-size: 18px;
+    padding:28px 25px;
+    text-align: justify;
+}
+.level3{  
+    width: 800 px;
+    margin: 15px ;
+    margin-left: 10rem;
+    font-size: 18px;
+    padding:28px 25px;
+    text-align: justify;
+}
+.Dato{ 
+    width: 50rem;
+    margin: 6rem;
+    margin-left: 25rem;
+    font-size: 18px;
+    padding:4rem 2rem;
+    text-align: justify;
+    font-family:sans-serif ;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.596);
+}
