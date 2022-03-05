@@ -28,7 +28,19 @@ header{
     height: auto;
 
 }
+footer{
+    display: table;
+    width: 100%;
+    height: auto;
+    background-image: url(../imagenes/enca4.png);
+    background-size: cover;
 
+}  
+.text{
+    width: 300px;
+    height: 150px;
+ 
+}  
 nav{
     float:left;
     margin-right: 50px;
@@ -108,7 +120,7 @@ section{
     animation: animacion_test 2s alternate infinite;  
 }
 section{  
-    width: auto;  
+    width: 80rem;  
     
 }
 .Estudios{  
@@ -124,29 +136,29 @@ section{
     background-color: rgba(22, 84, 219, 0.747);
     animation: animacion_test 2s alternate infinite;  
 }
+
 .level1{  
     width: 800 px;
     margin: 15px ;
     margin-left: 10rem;
-    font-size: 18px;
     padding:28px 25px;
     text-align: justify;
+    font-family:sans-serif ;
 }
 .level2{  
     width: 800 px;
-    margin: 15px ;
+    margin: 10px ;
     margin-left: 10rem;
-    font-size: 18px;
     padding:28px 25px;
-    text-align: justify;
 }
 .level3{  
     width: 800 px;
-    margin: 15px ;
+    margin: 10px ;
     margin-left: 10rem;
-    font-size: 18px;
     padding:28px 25px;
     text-align: justify;
+    font-family:sans-serif ;
+    font-size: 22px;
 }
 .Dato{ 
     width: 50rem;
@@ -159,3 +171,30 @@ section{
     color: aliceblue;
     background-color: rgba(0, 0, 0, 0.596);
 }
+
+.cont{  
+    width: 80rem;
+    margin: 15px;
+    margin-left: 10rem;
+    font-size: 18px;
+    padding:4rem 2rem;
+    align-items: center;
+    font-family:sans-serif ;
+    text-align: justify;
+
+}
+.video1, .video3{  
+    width: 35rem;
+    background-color: rgba(22, 84, 219, 0.747);
+    animation: animacion_test 2s alternate infinite;  
+    font-size: 18px;
+    padding:28px 25px;    
+}
+.video2, .video{  
+    width: 35rem;
+    margin-left: 40rem;
+    background-color: rgba(5, 5, 5, 0.87);
+    font-size: 18px;
+    padding:28px 25px;    
+}
+
