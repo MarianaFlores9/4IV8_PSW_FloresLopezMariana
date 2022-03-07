@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    color: rgb (0,0,0);
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    align-content: center;
+    font-family: 'Segoe UI';
+}  
+
+.container-form{
+    text-align: center;
+    margin: 5rem;
+    width: 35rem;
+    height: auto;
+    background-color: rgba(235, 92, 180, 0.63);
+    padding: 25px 25px;
+}
+
+header{
+    background-color: rgb(235, 140, 188);
+    width: 100%;
+    height: auto;
+}
+footer{
+    font-size: 14px;
+    background-color: rgb(184, 140, 235);
+    width: 100%;
+    height: auto;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+.Encabezado{
+    margin: 1rem;
+    text-align: center;
+    
+}
+table{
+    font-size: 12px;
+    width: 35rem;
+    padding: 9px;
+    text-align: center;
+    background-color: rgb(237, 100, 123);   
+}
+td, th{
+    margin: 5px;
+    padding: 5px;
+    border: rgb(255, 255, 255) 1px solid;
+}
+.boton{
+    align-content: center;
+    margin: 15px;
+    width: 35rem;
+}
+button{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Segoe UI';
+    padding: 2px 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+}

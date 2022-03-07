@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interes</title>
+    <link rel="stylesheet" href="Recursos/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="Encabezado">
+            <h2>Examen - Interes Compuesto</h2>
+        </div>
+    </header>
+    <div class="container-form">
+        <section>
+            <h3>Datos de la compra</h3>
+            <br>
+            <form id="interesForm"  >
+                <div class="informacion">
+                    <div class="Valor">
+                        <label for="valor">Valor del Automovil</label>
+                        <input required type="number" name="valor" id="valor"   placeholder="$100,000.00-$1,000,000.00">
+                    </div>
+                    <br>
+                    <div class="CuotaI">
+                        <label for="CuotaI">Cuota Inicial</label>
+                        <input required type="number" name="CuotaI" id="CuotaI"  placeholder="minimo 10% ">
+                    </div>
+                    <br>
+                    <div class="Periodo">
+                        <h4>Periodo de pago</h4>
+                        <input  required type="radio" name="Periodo" id="3" value="3">
+                        <label for="3">3 Meses</label>
+                        
+                        <input required type="radio" name="Periodo" id="6" value="6">
+                        <label for="9">6 Meses</label>
+
+                        <input required type="radio" name="Periodo" id="9" value="9">
+                        <label for="6">9 Meses</label>
+                       
+                        <input required type="radio" name="Periodo" id="12" value="12">
+                        <label for="12">12 Meses</label>
+
+                        <input required type="radio" name="Periodo" id="18" value="18">
+                        <label for="18">18 Meses</label>
+                        <br>
+                    </div>
+                    
+                    <div class="boton">
+                        <button id="botonDeEnvio">Agregar</button>
+                        <button type="button" onclick="calcular();">Interes Compuesto</button>
+                    </div>
+                    <p>Interes Compuesto: <span id="iC"></span></p>
+                </div>   
+                <br>
+            </form>
+            <div class="Table">
+                <table id="Tabla_info">
+                        <tr>
+                            <th>Valor del Automovil</th>
+                            <th>Cuota Inicial</th>
+                            <th>Periodo de pago</th>
+                            <th>Interes</th>
+                            <th>Eliminar</th>
+                             
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                            
+                        </tr>
+                      
+                </table>
+
+
+            </div>
+            
+        </section>
+    </div>
+    <script src="Recursos/js/validacion.js"></script>
+    <footer>
+        <div class="Datos">
+            <p>Nombre: Flores López Mariana  4IV8   Boleta: 2021090843</p> 
+            <p>Materia: Programación Y Servicios Web,  Minor Gomez Jaime</p>  
+        </div>
+    </footer>
+</body>
+</html>
