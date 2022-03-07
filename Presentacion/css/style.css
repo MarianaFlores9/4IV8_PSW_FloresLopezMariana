@@ -38,7 +38,7 @@ body{
 
 .apartado{
     width: 600px;
-    height: 280px;
+    height: auto;
     padding: 25px 25px;
     border: 2px solid blue;
     background-color: rgba(4, 76, 209, 0.418);
