@@ -15,6 +15,7 @@ body{
 }  
 
 .container-form{
+    font-size: 20px;
     text-align: center;
     margin: 5rem;
     width: 35rem;
@@ -29,10 +30,11 @@ header{
     height: auto;
 }
 footer{
-    font-size: 14px;
+    font-size: 24px;
+    padding: 16px;
     background-color: rgb(184, 140, 235);
     width: 100%;
-    height: auto;
+    height:4rem;
     font-family: 'Segoe UI';
     text-align: center;
 }
@@ -42,7 +44,7 @@ footer{
     
 }
 table{
-    font-size: 12px;
+    font-size: 15px;
     width: 35rem;
     padding: 9px;
     text-align: center;
@@ -64,4 +66,7 @@ button{
     padding: 2px 5px;
     border-radius: 10px;
     border: 2px solid rgb(255, 255, 255);
+}
+input{
+    width: 10rem;
 }

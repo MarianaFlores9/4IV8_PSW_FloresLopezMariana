@@ -3,23 +3,29 @@
 const form = document.getElementById("interesForm");
 
 form.addEventListener("submit", function(event){
-    function calcular(){
-        var val = parseInt(document.getElementById('valor').value);
-        var ci = parseInt(document.getElementById('CuotaI').value);
-        
-        document.getElementById('iC').innerHTML = ((val-ci)*(1+0.0394));
-    }
     event.preventDefault();
         if (form.valor.value>=  100000  &&  form.valor.value <= 1000000){                  
             if(form.CuotaI.value >= 0.10*form.valor.value){
-                
+                if (form.Periodo.value == 3 ||form.Periodo.value == 6 || form.Periodo.value == 9 || form.Periodo.value== 12 || form.Periodo.value== 18){
+                    var x = parseInt(document.getElementById('valor').value);
+                    var y = parseInt(document.getElementById('CuotaI').value);
+                    var z = parseInt(document.getElementById('Periodo').value);
+                    
+                        document.getElementById('Capital').innerHTML = (x-y)*((1+0.0394)**z);
+                           
+                        var c = parseFloat(document.getElementById('Capital').innerHTML);
+                        document.getElementById('Cuota').innerHTML = (c/z);
                 let interesFormData = new FormData(form);
                 let interesObj = convertFormDataToInteresObj(interesFormData)
                 saveInteresObj(interesObj)
                 insertRowInTabla_info(interesObj)
-                form.reset();
-
-                
+                form.reset();   
+            }
+                else{
+                    alert("El periodo es solamente de 3, 6, 9, 12 ó 18 meses")
+                    form.CuotaI.focus();
+                    return false;
+                }
             }
             else{
                 alert("La cuota inicial tiene que ser minimo 10% del valor capital")
@@ -61,6 +67,17 @@ form.addEventListener("submit", function(event){
                 }
             }
             function insertRowInTabla_info(interesObj){
+
+                //aqui se jalan los datos de la operacion
+                
+                function calcular(){
+                    var x = parseInt(document.getElementById('valor').value);
+                    var y = parseInt(document.getElementById('CuotaI').value);
+                    var z = parseInt(document.getElementById('Periodo').value);
+                    document.getElementById('Capital').innerHTML = ((x-y)*(1+0.0394))*z;
+                }
+
+
                 let Tabla_infoRef = document.getElementById("Tabla_info");
 
                 let newInteresRowRef = Tabla_infoRef.insertRow(-1);

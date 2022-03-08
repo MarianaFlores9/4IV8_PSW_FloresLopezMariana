@@ -17,47 +17,46 @@
         <section>
             <h3>Datos de la compra</h3>
             <br>
-            <form id="interesForm"  >
+            <form id="interesForm"  name="" method="post">
                 <div class="informacion">
                     <div class="Valor">
-                        <label for="valor">Valor del Automovil</label>
+                        <label for="valor">Valor del Automovil: </label>
                         <input required type="number" name="valor" id="valor"   placeholder="$100,000.00-$1,000,000.00">
                     </div>
                     <br>
                     <div class="CuotaI">
-                        <label for="CuotaI">Cuota Inicial</label>
+                        <label for="CuotaI">Cuota Inicial: </label>
                         <input required type="number" name="CuotaI" id="CuotaI"  placeholder="minimo 10% ">
                     </div>
                     <br>
                     <div class="Periodo">
-                        <h4>Periodo de pago</h4>
-                        <input  required type="radio" name="Periodo" id="3" value="3">
-                        <label for="3">3 Meses</label>
-                        
-                        <input required type="radio" name="Periodo" id="6" value="6">
-                        <label for="9">6 Meses</label>
-
-                        <input required type="radio" name="Periodo" id="9" value="9">
-                        <label for="6">9 Meses</label>
-                       
-                        <input required type="radio" name="Periodo" id="12" value="12">
-                        <label for="12">12 Meses</label>
-
-                        <input required type="radio" name="Periodo" id="18" value="18">
-                        <label for="18">18 Meses</label>
-                        <br>
+                        <label for="3">Periodo de pago en meses: </label>
+                        <input required type="number" name="Periodo" id="Periodo" placeholder="3,6,9,12 ó 18">
                     </div>
-                    
                     <div class="boton">
-                        <button id="botonDeEnvio">Agregar</button>
-                        <button type="button" onclick="calcular();">Interes Compuesto</button>
+                        <button id="botonDeEnvio">Calcular</button>
                     </div>
-                    <p>Interes Compuesto: <span id="iC"></span></p>
+                   <br>
                 </div>   
-                <br>
+               
             </form>
             <div class="Table">
+                <table id="Tabla_info1">
+                    <caption><h3>Calculo actual</h3></caption>
+                    <tr>
+                        <th>Valor futuro del crédito</th>
+                        <th>Cuota </th>
+                         
+                    </tr>
+                    <tr>
+                        <td> <p> $ <span id="Capital"></span></p></td>
+                        <td>$ <span id="Cuota"></span></p></td>
+                    </tr>
+                  
+            </table>
+            <br>
                 <table id="Tabla_info">
+                    <caption><h3>Historial de datos ingresados</h3></caption>
                         <tr>
                             <th>Valor del Automovil</th>
                             <th>Cuota Inicial</th>
@@ -66,24 +65,18 @@
                             <th>Eliminar</th>
                              
                         </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            
-                            
-                        </tr>
                       
                 </table>
-
+                
 
             </div>
             
         </section>
     </div>
-    <script src="Recursos/js/validacion.js"></script>
+    <script type="text/javascript" src="Recursos/js/validacion.js"></script>
+    
+
+    </script>
     <footer>
         <div class="Datos">
             <p>Nombre: Flores López Mariana  4IV8   Boleta: 2021090843</p> 
