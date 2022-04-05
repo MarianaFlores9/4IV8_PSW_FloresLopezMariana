@@ -4,9 +4,17 @@
         <servlet-name>Parametros</servlet-name>
         <servlet-class>Parametros</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ConsultarAlumnos</servlet-name>
+        <servlet-class>ConsultarAlumnos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Parametros</servlet-name>
         <url-pattern>/Parametros</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ConsultarAlumnos</servlet-name>
+        <url-pattern>/ConsultarAlumnos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
