@@ -1,0 +1,24 @@
+*{
+    margin:15px;
+    padding:0;
+
+}
+body{
+    background-image: url(../img/fondojava.png);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    align-content: center;
+} 
+.tabla{
+    background-color: #f17c9973;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 22px;
+    width: auto;
+    height: auto;
+}
